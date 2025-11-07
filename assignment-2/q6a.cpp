@@ -21,13 +21,12 @@ int main() {
     // Transpose
     Element t[100];
     for (int i = 0; i < nonZero; i++) {
-        t[i].row = a[i].col; 
+        t[i].row = a[i].col;
         t[i].col = a[i].row;
         t[i].val = a[i].val;
     }
 
-    
-    cout << "Transpose (row col val):\n";
+    cout << "\nTranspose (row col val):\n";
     for (int i = 0; i < nonZero; i++) {
         cout << t[i].row << " " << t[i].col << " " << t[i].val << endl;
     }
